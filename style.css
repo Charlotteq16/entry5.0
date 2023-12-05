@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 1800px; /* Adding some height to the body for scrolling */
+}
+
+.next{
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    right: 5%;
+    font-size: larger;
+}
+
+.homepage{
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    left: 47%;
+    font-size: larger;
+}
+
+.previous{
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    left:5%;
+    font-size: larger;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color:rgb(72, 210, 134);
+    transition: background-color 0.5s ease; /* Adding transition for smooth color change */
+    height: 100%;
+    position: relative; /* Add relative positioning to contain absolute positioned child */
+}
+
+.image {
+    position: absolute;
+    top: 55%; /* Adjust the top position as needed */
+    left: 30%; /* Adjust the left position to push the image to the left */
+    transform: translate(-50%, -50%); /* Center the image vertically using a translation */
+    border: dashed palevioletred;
+    border-width: 10px;
+    height: 100%; /* Increase the height of the image */
+    width: 55%;
+}
+
+.eye1{
+    position: absolute;
+    top: 160%; /* Adjust the top position as needed */
+    left: 40%; /* Adjust the left position to push the image to the left */
+    transform: translate(-50%, -50%); /* Center the image vertically using a translation */
+    border-radius: 100%;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    animation:eye 4s infinite forwards;
+}
+
+.eye2{
+    position: absolute;
+    top: 160%; /* Adjust the top position as needed */
+    left: 60%; /* Adjust the left position to push the image to the left */
+    transform: translate(-50%, -50%); /* Center the image vertically using a translation */
+    border-radius: 100%;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    animation:eye 4s infinite forwards;
+}
+
+@keyframes eye{
+   0%{width: 200px;
+    height: 100px;
+}
+50%{width: 250px;
+    height: 250px;
+}
+100%{width: 200px;
+    height: 100px;
+}
+}
+
+.iris1{
+    position: absolute;
+    top: 160%; /* Adjust the top position as needed */
+    left: 40%; /* Adjust the left position to push the image to the left */
+    transform: translate(-50%, -50%); /* Center the image vertically using a translation */
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    animation:iris 4s infinite forwards;
+}
+
+.iris2{
+    position: absolute;
+    top: 160%; /* Adjust the top position as needed */
+    left: 60%; /* Adjust the left position to push the image to the left */
+    transform: translate(-50%, -50%); /* Center the image vertically using a translation */
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    animation:iris 4s infinite forwards;
+}
+
+@keyframes iris{
+    0%{width: 50px;
+     height: 50px;
+ }
+ 50%{width: 20px;
+     height: 20px;
+ }
+ 100%{width: 50px;
+     height: 50px;
+ }
+ }
+
+.mouth{
+    position: absolute;
+    top: 185%; /* Adjust the top position as needed */
+    right: 37%; /* Adjust the left position to push the image to the left */
+    transform: translate(-50%, -50%); /* Center the image vertically using a translation */
+    border-radius: 100%;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(255, 255, 255);
+    animation:mouth 4s infinite forwards;
+}
+
+@keyframes mouth{
+    0%{opacity: 0;
+ }
+ 50%{opacity: 1;
+ }
+ 100%{opacity: 0;
+ }
+ }
+
+
+
+.bw-image{
+    position:absolute;
+    right:7%;
+    top: 27%;
+}
+
+.number5{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size:xx-large;
+    background-color: whitesmoke;
+    border: solid rgb(39, 5, 65);
+    border-width: 5px;
+}
+
+.INFO-CONTAINER{
+    width: 30%;
+    height:.5%;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 20%;
+    right:6%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    border: solid;
+    border-width: 10px;
+    animation-name: AnimateBorder;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes AnimateBorder{
+    50%{ border-color:rgb(244, 122, 238);}
+    100%{border-color:rgb(255, 0, 217);}
+  }
+
+.INFO-CONTAINER:hover{
+    transition: width 3s, height 3s, opacity 2s;
+    height: 58%;
+    font-size: 35px;
+    flex: 4;
+}
+
+  .info-word{
+        font-size: 500%;
+        position: absolute;
+        top: 10%;
+        right:15%;
+  }
+
+  .information{
+    width: 90%;
+    position:relative;
+    left: 5%;
+    top: 1%;
+  }
+
+  .thoughts{
+    width: 95%;
+    position:relative;
+    left: 1%;
+    top:.5%;
+  }
+
+  .thoughts-word{
+    font-size: 500%;
+    position:absolute;
+    bottom:5%;
+    right:6%;
+}
+
+.thoughts-container{
+    width: 30%;
+    height:.5%;
+    background-color: whitesmoke;
+    position: absolute;
+    bottom:15%;
+    right:6%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0px;
+    border: solid;
+    border-width: 10px;
+    animation-name: AnimateBorder;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; 
+}
+
+.thoughts-container:hover{
+    transition: width 3s, height 3s, opacity 2s;
+    height: 58%;
+    font-size: 20px; 
+}
+
+@media screen and (max-width: 1400px){
+    .thoughts-word{
+        font-size: 60px;
+        right: 9%;
+      }
+
+      .thoughts-container:hover{
+        font-size: 18px;
+      }
+}
+
+@media screen and (max-width: 1200px){
+    .info-word{
+        position: absolute;
+        right:40% ;
+      }
+
+      .thoughts-word{
+        position: absolute;
+        right: 25%;
+        font-size: 500%;
+      }
+
+      .thoughts-container,
+      .INFO-CONTAINER {
+        width: 80%; /* Adjust width as needed */
+        height: .5%;
+      }
+
+      .thoughts-container:hover{
+        font-size: 20px;
+      }
+
+      .bw-image {
+        left: 17%; /* Adjust left property for positioning */
+        top: 27%; /* Adjust top property for vertical positioning */
+        width: 70%;
+      }
+
+    .image{
+        position: absolute;
+      top: 150%;
+      left: 50%;
+      width: 90%;
+      height:90%;
+      }
+
+      .eye1, .eye2{
+        position: absolute;
+        top: 220%;
+      }
+
+      .iris1, .iris2{
+        position: absolute;
+        top: 220%;
+      }
+
+      .mouth{
+        position: absolute;
+        right:33%;
+        top: 247%;
+      }
+
+      .header{
+        height: 130%;
+      }
+}
+
+@media screen and (max-width: 600px){
+    .mouth{
+        position: absolute;
+        right:17%;
+      }
+
+      .thoughts-word{
+        position: absolute;
+        right: 6%;
+      }
+
+      .info-word{
+        right: 30%;
+      }
+}
+
+
+
+
